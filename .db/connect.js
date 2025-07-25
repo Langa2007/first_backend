@@ -15,4 +15,3 @@ pool.connect()
   .catch(err => console.error("❌ DB Connection Error", err.stack));
 
 module.exports = pool;
-

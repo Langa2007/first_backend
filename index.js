@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const pool = require('./db/connect');
+const pool = require('./.db/connect');
 
 // Middleware to allow JSON parsing
 app.use(express.json());
@@ -53,3 +53,4 @@ const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`🚀 Server running at http://localhost:${PORT}`);
 });
+
